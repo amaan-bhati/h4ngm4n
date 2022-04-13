@@ -5,3 +5,24 @@ $blue: #82d2e5;
 $grey:#f3f3f3;
 $white: #fff;
 $base-color:$green ;
+
+@mixin transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  @mixin clear {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+  }
+  
+   @mixin box-size {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
