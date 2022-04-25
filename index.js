@@ -17,3 +17,7 @@ var showLives = document.getElementById("mylives");
 var showCatagory = document.getElementById("scatagory");
 var getHint = document.getElementById("hint");
 var showClue = document.getElementById("clue");
+ // create alphabet ul
+ var buttons = function () {
+    myButtons = document.getElementById('buttons');
+    letters = document.createElement('ul');
