@@ -63,11 +63,12 @@ var showClue = document.getElementById("clue");
       }
 
       geusses.push(guess);
-      wordHolder.appendChild(correct);
+      wordHolder.appendChild(correct):
+      
       correct.appendChild(guess);
     }
   }
-  // Show lives
+ 
   comments = function () {
     showLives.innerHTML = "You have " + lives + " lives";
     if (lives < 1) {
@@ -79,3 +80,11 @@ var showClue = document.getElementById("clue");
       }
     }
   }
+
+  
+      // Animate man
+      var animate = function () {
+        var drawMe = lives ;
+        drawArray[drawMe]();
+      }
+    
